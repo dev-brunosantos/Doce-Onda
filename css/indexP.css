@@ -1,3 +1,7 @@
+/* ARQUIVO CSS PARA PEQUENAS TELAS (MOBILE) */
+
+
+
 @media (max-width: 900px) {
     * {
         margin: 0;
