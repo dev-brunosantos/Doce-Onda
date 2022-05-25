@@ -1,0 +1,47 @@
+@media (max-width: 900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* ----- PALHETA DE CORES ----- */
+    :root {
+        --branco: white;
+        --preto: black;
+        --azul: #45d7e8; 
+        --rosa: #f48abf;
+        --amarelo: #febc27;
+    }
+    /* _________________________________ */
+    /* ----- CABEÇALHO E MENU PRINCIPAL ----- */
+    header {
+        min-width: 360px;
+        max-width: 900px;
+        border: solid red;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        width: 50%;
+        height: 300px;
+        position: fixed;
+        top: 150px;
+        left: -5px;
+        border: solid red;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 2px;
+    }
+    /* _________________________ */
+    main, #contatos {
+        display: none;
+    }
+}

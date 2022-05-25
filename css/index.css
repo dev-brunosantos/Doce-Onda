@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(55deg, white, cyan, white);
+  background-repeat: no-repeat;
+  background-size: 100% 623px;
+}
+/* -----PALHETA DE CORES----- */
+:root {
+  --cor-de-rosa: #e087d5;
+  --branco: white;
+  --azul: cyan;
+}
+/*________________________*/
+
+/*GERAIS*/
+#geral {
+  width: 99%;
+  height: 623px;
+  border: solid var(--cor-de-rosa);
+}
+header {
+  width: 99%;
+  background-color: var(--branco);
+}
+nav {
+  width: 98%;
+  position: relative;
+  left: 7px;
+}
+main {
+  width: 95%;
+  height: 290px;
+  border: solid transparent;
+  margin-left: 2.5%;
+}
+#tela1 {
+  width: 90%;
+  height: 200px;
+  border: dashed var(--cor-de-rosa);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 5%;
+  animation: aparecer 1s;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+#album {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 5%;
+  position: relative;
+  /*
+  background-image: url('/img/logo.doce.png');
+  background-size: 100% 100%;
+  animation: album 15s linear infinite;
+  animation-delay: 1s;*/
+}
+/*
+@keyframes album {
+  0% {
+    background-image: url('/img/logo.doce.png');
+    background-size: 100% 100%;
+  }
+  25% {
+    background-image: url('/img/bombom.png');
+    background-size: 100% 100%;
+  }
+  50% {
+    background-image: url('/img/pudim.png');
+    background-size: 100% 100%;
+  }
+  75% {
+    background-image: url('/img/torta1.png');
+    background-size: 100% 100%;
+  }
+  100% {
+    background-image: url('/img/torta2.png');
+    background-size: 100% 100%;
+  }
+}
+*/
+#tela2,#tela3,#tela4 {
+  display: none;
+  width: 90%;
+  height: 350px;
+  border: dashed var(--cor-de-rosa);
+  border-radius: 20px;
+  margin-top: 8px;
+  margin-left: 5%;
+  animation: aparecer 1s;
+}
+#tela3,#tela4 {
+  background-color: #e087d590 ;
+  
+}
+footer {
+  background-color: var(--branco);
+  width: 70%;
+  height: 60px;
+  border: solid var(--cor-de-rosa);
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+  left: 15%;
+}
+
+/*TEXTOS*/
+li.menu {
+  color: var(--azul);
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  list-style: none;
+  display: inline-block;
+  margin-left: 0.3px;
+  padding: 4px;
+  border: solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px black;
+}
+li.menu:hover {
+  background-color: var(--azul);
+  color: var(--cor-de-rosa);
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  list-style: none;
+  display: inline-block;
+  margin-left: 0.5px;
+  padding: 4px;
+  border: solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px black;
+  animation: mexer 200ms;
+}
+@keyframes mexer {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+h3 {
+  color: var(--cor-de-rosa);
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+}
+
+p {
+  color: var(--cor-de-rosa);
+  font-size: 14pt;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Times New Roman;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  text-decoration: underline;
+  margin-top: 12px;
+}
+#p1 {
+  color: var(--branco);
+  font-family: Sans-Serif;
+  font-style: italic;
+  font-size: 16pt;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#p2 {
+  color: var(--azul);
+  font-family: Sans-Serif;
+  font-style: italic;
+  font-size: 16pt;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#p3 {
+  color: var(--cor-de-rosa);
+  font-family: Sans-Serif;
+  font-style: italic;
+  font-size: 16pt;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.redes {
+  color: var(--azul);
+  font-size: 14pt;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  display: block;
+  margin-bottom: -12px;
+}
+
+/*IMAGENS*/
+#logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 75px;
+}
+.produtos {
+  width: 95px;
+  height: 90px;
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  left: 5px;
+}
+
+#album {
+  position: relative;
+}
+#album img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+}
+#album .slide img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 1;
+}
