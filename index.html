@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="stylesheet" href="css/indexP.css">
-  <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="css/indexP.css"><!-- LINK DE ARQUIVO CSS PARA PEQUENAS TELAS -->
+  <link rel="stylesheet" href="css/index1.css"><!-- LINK DE ARQUIVO CSS PARA GRANDES TELAS -->
 
 
   <title>Doce Onda</title>
 </head>
 <body>
-  
+
   <div id="geral">
     
       <header>
         
-        
+        <!-- LOGOMARCA DA DOCE ONDA PARA DISPOSITÍVOS MÓVEIS -->
+        <img src="img/logoMarca.png" alt="" class="logoMobile" onclick="abrirMenu()">
+        <!-- _____________________________ -->
         
         <nav>
           <a href="#inicio" class="menu" >home</a>
@@ -34,7 +36,7 @@
         
       </header>
       
-     <main>
+     <main onclick="fecharMenu()">
 
        <section id="inicio" class="telas">
 
@@ -356,14 +358,14 @@
 
 
       </section>
-     </main>
-      
-      
+
       <footer id="contatos">
         <a href="#" class="redes">doceonda@gmail.com</a>
         <a href="#" class="redes">@doce_onda</a>
         <a href="#" class="redes">(84)9 9195-1917</a>
       </footer>
+
+     </main>
     
   </div>
   
